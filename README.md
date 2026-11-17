@@ -4,7 +4,7 @@ Projeto final de Ciência de Dados, UTFPR.
 
 ## Reprodução
 
-Requer Python 3.10 ou mais novo e acesso à internet.
+Requer Python 3.12 ou mais novo (testado com 3.14.7) e acesso à internet.
 
 ```bash
 # Ambiente
