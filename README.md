@@ -20,6 +20,9 @@ python3 -m venv .venv
 # Preparação e integração: baixa clima na primeira execução e gera processado/*.parquet
 .venv/bin/jupyter nbconvert --execute --to notebook --inplace 02_preparacao.ipynb
 #    ou abrir o notebook com: .venv/bin/jupyter lab
+
+# Análise e consultas SQL
+.venv/bin/jupyter nbconvert --execute --to notebook --inplace 03_analise.ipynb
 ```
 
 ## Estrutura
@@ -29,6 +32,7 @@ python3 -m venv .venv
 | `download_ons.py` | Download dos dados brutos do Portal de Dados Abertos do ONS (`--help` mostra as opções) |
 | `download_inmet.py` | Download dos CSVs horários das estações do INMET em Curitiba, Florianópolis e Porto Alegre |
 | `02_preparacao.ipynb` | Etapa 2: limpeza, clima, feriados, agregações, validação e exportação |
+| `03_analise.ipynb` | Etapa 3: consultas SQL, análise exploratória, gráficos e testes das hipóteses |
 | `dataset/` | Dados brutos, fora do Git: arquivos do ONS, `inmet/` e `clima_open_meteo/` (cache da API) |
 | `processado/` | Bases finais em Parquet |
 
